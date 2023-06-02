@@ -1,0 +1,118 @@
+body{
+    background-image: url(img/background.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.container{
+    width: 65%;
+    background-color: rgba(0, 0, 0, 0.50);
+    border-radius: 20px;
+    padding: 4%;
+    padding-bottom: 6%;
+    margin: auto;
+    margin-top: 2%;
+    
+}
+
+.logo {
+    color: rgb(25, 218, 11);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+#logoimg{
+    height: 100px; 
+}
+
+.logo h1{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav, button, .monopattino, .charge{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+nav{
+    background-color: rgb(25, 218, 11);
+    margin: auto;
+    color: rgb(78, 78, 78);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+button {
+    display: inline-block;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    transition-duration: 50ms;
+}
+
+button:hover{
+    background-color: lightskyblue;
+}
+
+main{
+    width: 50%;
+    display: inline-block;
+}
+
+.monopattino{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.monopattino .name{
+    color: lightgrey;
+    font-size: larger;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0.5rem;
+}
+
+.monopattino p{
+    color: lightgray;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0.5rem;
+    
+}
+
+.monopattino:hover {
+    background-color: rgba(6, 42, 66, 0.5);
+    transition: opacity 200ms;
+}
+
+.monopattino > input {
+    cursor: pointer;
+}
+
+/* inizio stato carica */
+.charge {
+    height: 1rem;
+}
+
+.charge.full{
+     background-color: rgb(16, 222, 16);
+     width: 100%;
+}
+
+.charge.mid{
+     background-color: orange;
+     width: 50%;
+}
+
+.charge.low{
+       background-color:red;    
+       width: 20%;
+}
+
+/* fine stato carica */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
